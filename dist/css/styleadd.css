@@ -2,16 +2,16 @@
     --prana-color: #443C36;
     --prana-verde: #8DA616;
     --prama-gris: #6C6D62;
+    --prama-cafe-1:#E6DACF;
 }
 
 .justify-pa {
     justify-content: space-evenly;
     align-items: center;
-    justify-items: ;
 }
 
 .navigation-prana {
-/*    background: var(--prana-color);*/
+    /*    background: var(--prana-color);*/
     backdrop-filter: blur(2px);
     height: 82px;
     align-items: baseline;
@@ -19,7 +19,7 @@
 
 .banner-hero-image {
     background-image: url('../../site/sourse/header-prana.jpg');
-    height: 100vh;
+    height: 90vh;
     background-size: cover;
     background-position: center;
 }
@@ -41,7 +41,7 @@
     letter-spacing: 0.05em;
     font-weight: bold;
     padding: 100px 0;
-    color:var(--prana-color);
+    color: var(--prana-color);
 }
 
 .title-copy {
@@ -73,6 +73,34 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+.section-banner-loby {
+    background-image: url('../../site/sourse/loby-prana-merida.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-banner-mapa {
+    background-image: url('../../site/sourse/fondo-mapa.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-copy-mapa {
+    background-color: white;
+}
+
+.mapa-space {
+    width:80vw;
+        justify-content: space-evenly;
+    align-items: center;
+
+}
+.section-rooftop {
+    background-color: var(--prama-cafe-1);
 }
 
 .header-banner {
