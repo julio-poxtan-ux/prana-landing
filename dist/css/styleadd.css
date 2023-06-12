@@ -11,7 +11,6 @@
 }
 
 .navigation-prana {
-    /*    background: var(--prana-color);*/
     backdrop-filter: blur(2px);
     height: 82px;
     align-items: baseline;
@@ -97,7 +96,7 @@
 
 .section-modelos {
     background-color: var(--prama-cafe-1);
-/*    padding: 0 0 10rem 0;*/
+    padding: 0 0 5rem 0;
 }
 
 .section-copy-mapa {
@@ -151,6 +150,26 @@
 
 .icons-amenidades {
     padding: 0 5rem;
+}
+
+.btn-niveles {
+    padding-top: 6rem;
+}
+
+.button-cotizador-nivel {
+    padding: 2.2rem;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    width: min(500px, calc(100vw - 5px), 92vw);
+    height: 110px;
+    background-color: rgb(255 255 255 / 70%);
+    border: 4px inset rgb(223 255 0 / 60%);
+}
+
+.button-cotizador-nivel:hover {
+    background-color: rgb(223 255 0 / 85%);
+    color: black;
 }
 
 .header-banner {

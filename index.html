@@ -16,47 +16,6 @@
 </head>
 
 <body>
-    <!-- <nav class="navbar fixed-top"style="background: rgba(69, 57, 50, 0.85);">
-        <div class="container-fluid">
-            <img src="site/sourse/isologo.svg" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav> -->
     <nav class="navbar navbar-expand-md sticky-top border-bottom navigation-prana" data-bs-theme="dark" style="background: rgba(69, 57, 50, 0.85);">
         <div class="container-fluid">
             <a class="navbar-brand d-md-none" href="#">
@@ -86,11 +45,49 @@
             </div>
         </div>
     </nav>
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> -->
     <main>
         <div class="container-fluid p-5 banner-hero-image">
             <div class="row py-5 align-items-center">
                 <div class="col-md-4">
-                    <img src="site/sourse/logo-header-prana.svg" alt="Prana" class="m-4">
+                    <img src="site/sourse/logo-header-prana.svg" alt="Prana" class="img-fluid">
                     <!-- <h1>Una comunidad enfocada en el desarrollo físico y espiritual.</h1> -->
                     <button class="btn btn-lg btn-prana mt-5 fw-bold" type="button">CONOCER MÁS</button>
                 </div>
@@ -101,7 +98,7 @@
         </video>
         <!-- Video -->
         <!-- Descripcion -->
-        <section id="descripcion">
+        <section id="descripcion" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <div class="container mb-5">
                 <h2 class="text-center title-secction">DESCRIPCIÓN</h2>
                 <div class="row justify-content-md-center pt-2">
@@ -134,11 +131,11 @@
         <!-- Banner -->
         <!-- Mapa -->
         <section id="ubicacion">
-            <div class="container-fluid">
-                <h2 class="text-center title-secction" data-aos="zoom-in" data-aos-delay="50">UBICACIÓN</h2>
+            <div class="container-fluid" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <h2 class="text-center title-secction">UBICACIÓN</h2>
             </div>
             <div class="d-flex align-items-center justify-content-center">
-                <img src="site/sourse/mapa-prana.png" data-aos="zoom-in" data-aos-delay="450" class="mapa-space" alt="Ubicación de comunidad PRANA">
+                <img src="site/sourse/mapa-prana.png" class="mapa-space img-fluid" alt="Ubicación de comunidad PRANA">
             </div>
         </section>
         <!-- Copy Mapa -->
@@ -234,13 +231,13 @@
         <!-- Rooftop -->
         <!-- Banner -->
         <div class="d-flex align-items-center justify-content-center section-banner-loby">
-            <h2 class="header-banner" data-aos="zoom-in-up">EN PRANA LA SANACIÓN ES UN <br> CAMINO QUE CAMINAMOS <JUNTOS></JUNTOS>
+            <h2 class="header-banner" data-aos="zoom-in-up">EN PRANA LA SANACIÓN ES UN <br> CAMINO QUE CAMINAMOS
             </h2>
         </div>
         <!-- Banner -->
         <!-- Galeria -->
         <section id="galeria">
-            <div class="container">
+            <div class="container" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <h2 class="text-center title-secction">GALERÍA</h2>
                 <div class="row">
                     <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
@@ -272,12 +269,12 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <h3 class="text-center fw-bold">AURA</h3>
-                        <p class="text-center">1 Recamaras</p>
+                        <p class="text-center">1 Rec&aacute;mara</p>
                         <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <h3 class="text-center fw-bold">BRISA</h3>
-                        <p class="text-center">2 Recamaras</p>
+                        <h4 class="text-center">2 Rec&aacute;maras</h4>
                         <img src="site/sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Brisa">
                     </div>
                 </div>
@@ -285,11 +282,12 @@
         </section>
         <!-- Modelos -->
         <!-- Cotizador -->
-        <section id="cotizador">
-            <div class="container-fluid section-cotizador">
-                <div class="row">
-                    <div class="col-lg-12"></div>
-                </div>
+        <section id="cotizador" class="section-cotizador">
+            <div class="d-grid justify-content-center align-items-center btn-niveles">
+                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-4">Nivel 4</button>
+                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-3">Nivel 3</button>
+                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-2">Nivel 2</button>
+                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-1">Nivel 1</button>
             </div>
         </section>
         <!-- Cotizador -->
@@ -297,28 +295,12 @@
             <div class="container-fluid section-luvora">
                 <div class="row">
                     <h2 class="text-center title-secction text-white">UN DESARROLLO DE</h2>
-                    <div class="info-luvora">
-                        <div class="col-md-6">
-                            <img src="site/sourse/logo-luvora.svg" class="p-5 img-fluid" alt="Luvora Desarrollos">
-                            <h5 class="text-white">
-                                <li>Desarrolladora enfocada en proyectos de alta plusvalía.</li>
-                                <br>
-                                <li>Constructora Integral.</li>
-                                <br>
-                                <li>Equipo dedicado a compartir servicio y amor.</li>
-                                <br>
-                            </h5>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="site/sourse/badge_luvora.svg" alt="Luvora" class="img-fluid">
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
         <!-- Cotizador -->
         <section id="descargar-brochure">
-            <div class="container-fluid descargar-brochure">
+            <div class="container-fluid descargar-brochure" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div class="row">
                     <div class="col-lg-7">
                         <picture>
@@ -329,7 +311,7 @@
                         <h2 class="text-left title-secction">DESCARGAR BROCHURE</h2>
                         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                         <script>
-                        hbspt.forms.create({
+                            hbspt.forms.create({
                             region: "na1",
                             portalId: "39942104",
                             formId: "0482bcd0-afac-4ad2-bfa4-1af7da1065e8"
@@ -350,6 +332,68 @@
         </footer>
         <!-- Scripts -->
     </main>
+    <!-- Modales cotizador -->
+    <div class="modal fade modal-lg" id="nivel-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: rgba(69, 57, 50, 0.85);">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nivel 4</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-lg" id="nivel-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: rgba(69, 57, 50, 100%);">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nivel 3</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-lg" id="nivel-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: rgba(69, 57, 50, 0.85);">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nivel 2</h1>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-lg" id="nivel-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: rgba(69, 57, 50, 0.85);">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nivel 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modales cotizador -->
     <script>
     const carousel = new bootstrap.Carousel('#carouselExampleAutoplaying');
     </script>
