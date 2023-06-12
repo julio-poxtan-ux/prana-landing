@@ -38,8 +38,9 @@
                         <li class="nav-item"><a class="nav-link" href="#ubicacion">UBICACIÓN</a></li>
                         <li class="nav-item"><a class="nav-link" href="#rooftop">ROOFTOP/AMENIDADES</a></li>
                         <li class="nav-item"><a class="nav-link" href="#galeria">GALERÍA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cotizador">COTIZADOR</a></li>
                         <li class="nav-item"><a class="nav-link" href="#descargar-brochure">BROCHURE</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#aceca-de-luvora">ACERCA DE LUVORA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#acerca-de-luvora">ACERCA DE LUVORA</a></li>
                     </ul>
                 </div>
             </div>
@@ -267,15 +268,15 @@
                     <h2 class="text-center title-secction">MODELOS</h2>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <h3 class="text-center fw-bold">AURA</h3>
                         <p class="text-center">1 Rec&aacute;mara</p>
-                        <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                        <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" alt="Modelo Aura">
                     </div>
-                    <div class="col-sm-12 col-md-6">
-                        <h3 class="text-center fw-bold">BRISA</h3>
+                    <div class="col-sm-12 col-md-6" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <h3 class="text-center fw-bold">LOTUS</h3>
                         <h4 class="text-center">2 Rec&aacute;maras</h4>
-                        <img src="site/sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Brisa">
+                        <img src="site/sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" alt="Modelo Brisa">
                     </div>
                 </div>
             </div>
@@ -284,20 +285,13 @@
         <!-- Cotizador -->
         <section id="cotizador" class="section-cotizador">
             <div class="d-grid justify-content-center align-items-center btn-niveles">
-                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-4">Nivel 4</button>
-                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-3">Nivel 3</button>
-                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-2">Nivel 2</button>
-                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-1">Nivel 1</button>
+                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-4" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="400">Nivel 4</button>
+                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-3" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="400">Nivel 3</button>
+                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-2" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="400">Nivel 2</button>
+                <button class="button-cotizador-nivel" type="button" data-bs-toggle="modal" data-bs-target="#nivel-1" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="400">Nivel 1</button>
             </div>
         </section>
         <!-- Cotizador -->
-        <section id="cotizador">
-            <div class="container-fluid section-luvora">
-                <div class="row">
-                    <h2 class="text-center title-secction text-white">UN DESARROLLO DE</h2>
-                </div>
-            </div>
-        </section>
         <!-- Cotizador -->
         <section id="descargar-brochure">
             <div class="container-fluid descargar-brochure" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -317,6 +311,30 @@
                             formId: "0482bcd0-afac-4ad2-bfa4-1af7da1065e8"
                         });
                         </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="acerca-de-luvora">
+            <div class="container-fluid section-luvora">
+                <h2 class="text-center title-secction text-white" data-bs-toggle="modal" data-bs-target="#nivel-4" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="400">UN DESARROLLO DE</h2>
+                <div class="d-flex align-items-center">
+                    <div class="items" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="400">
+                        <img src="site/sourse/logo-luvora.svg" alt="Luvora" class="p-5">
+                        <h3 class="text-white">
+                            Desarrolladora enfocada en proyectos de <br>alta plusvalía.
+                        </h3>
+                        <br>
+                        <h3 class="text-white">
+                            Constructora Integral.
+                        </h3>
+                        <br>
+                        <h3 class="text-white">
+                            Equipo dedicado a compartir servicio y amor.
+                        </h3>
+                    </div>
+                    <div class="items justify-content-start">
+                        <img src="site/sourse/badge_luvora.svg" class="img-fluid" alt="Luvora" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="400">
                     </div>
                 </div>
             </div>
@@ -341,7 +359,19 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                 </div>

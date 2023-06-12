@@ -19,8 +19,8 @@
 .banner-hero-image {
     background-image: url('../../site/sourse/header-prana.jpg');
     height: 90vh;
-    /*    background-size: cover;
-    background-position: center;*/
+    background-size: cover;
+    background-position: center center;
 }
 
 .icon-amenidades:hover {
@@ -153,7 +153,12 @@
 }
 
 .btn-niveles {
-    padding-top: 6rem;
+    padding-top: 6.2rem;
+}
+
+.items {
+    /*    padding:0 15rem 0 15rem;*/
+    margin: auto;
 }
 
 .button-cotizador-nivel {
@@ -161,15 +166,15 @@
     color: black;
     font-weight: bold;
     font-size: 2rem;
-    width: min(500px, calc(100vw - 5px), 92vw);
+    width: min(600px, calc(100vw - 5px), 92vw);
     height: 110px;
     background-color: rgb(255 255 255 / 70%);
-    border: 4px inset rgb(223 255 0 / 60%);
+    border: 2px inset var(--prana-verde);
 }
 
 .button-cotizador-nivel:hover {
-    background-color: rgb(223 255 0 / 85%);
-    color: black;
+    background-color: rgb(141 166 22 / 55%);
+    color: white;
 }
 
 .header-banner {
