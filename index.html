@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="dist/css/styleadd.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -78,7 +79,7 @@
                         <li class="nav-item"><a class="nav-link" href="#ubicacion">UBICACIÓN</a></li>
                         <li class="nav-item"><a class="nav-link" href="#rooftop">ROOFTOP/AMENIDADES</a></li>
                         <li class="nav-item"><a class="nav-link" href="#galeria">GALERÍA</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#brochure">BROCHURE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#descargar-brochure">BROCHURE</a></li>
                         <li class="nav-item"><a class="nav-link" href="#aceca-de-luvora">ACERCA DE LUVORA</a></li>
                     </ul>
                 </div>
@@ -88,12 +89,10 @@
     <main>
         <div class="container-fluid p-5 banner-hero-image">
             <div class="row py-5 align-items-center">
-                <div class="col-lg-6">
+                <div class="col-md-4">
                     <img src="site/sourse/logo-header-prana.svg" alt="Prana" class="m-4">
-                    <h1>Una comunidad enfocada en el desarrollo físico y espiritual.</h1>
-                    <button class="btn btn-lg btn-prana mt-5" type="button">CONOCER MÁS</button>
-                </div>
-                <div class="col-lg-6 text-lg-right text-center mt-5 mt-lg-0">
+                    <!-- <h1>Una comunidad enfocada en el desarrollo físico y espiritual.</h1> -->
+                    <button class="btn btn-lg btn-prana mt-5 fw-bold" type="button">CONOCER MÁS</button>
                 </div>
             </div>
         </div>
@@ -105,43 +104,41 @@
         <section id="descripcion">
             <div class="container mb-5">
                 <h2 class="text-center title-secction">DESCRIPCIÓN</h2>
-                <div class="row justify-content-md-center pt-5">
-                    <div class="col-md-4 circle circle-1">
+                <div class="row justify-content-md-center pt-2">
+                    <div class="col-md-4 circle circle-1" data-aos="zoom-in" data-aos-delay="50">
                         <img src="site/sourse/disenando-prana.svg" width="125px" alt="Diseñado para impulsar el autodescubrimiento.">
                         <p class="pt-4">Diseñado para impulsar el autodescubrimiento.</p>
                     </div>
-                    <div class="col-md-4 circle circle-2">
+                    <div class="col-md-4 circle circle-2" data-aos="zoom-in" data-aos-delay="100">
                         <img src="site/sourse/departamentos-prana.svg" width="97px" alt="16 departamentos exclusivos en la zona más privilegiada de la ciudad.">
                         <p class="pt-4">16 departamentos exclusivos en la zona más privilegiada de la ciudad.</p>
                     </div>
-                    <div class="col-md-4 circle circle-1">
+                    <div class="col-md-4 circle circle-1" data-aos="zoom-in" data-aos-delay="200">
                         <img src="site/sourse/comunidad-prana.svg" width="125px" alt="Una comunidad enfocada en el desarrollo físico y espiritual.">
                         <p class="pt-4">Una comunidad enfocada en el desarrollo físico y espiritual.</p>
                     </div>
                 </div>
                 <div class="row pt-5">
-                    <h3 class="text-center pt-5 title-copy">Descubre la experiencia de un hogar que va <br> más allá de las expectativas.</h3>
+                    <h3 class="text-center pt-5 title-copy" data-aos="zoom-in-up">Descubre la experiencia de un hogar que va <br> más allá de las expectativas.</h3>
                 </div>
                 <div class="d-grid gap-2 col-sm-12 col-lg-2 mx-auto">
-                    <button class="btn btn-lg btn-prana mt-5 mb-5" type="button">COTIZA AQUÍ</button>
+                    <button class="btn btn-lg btn-prana mt-5 mb-5 fw-bold" type="button">COTIZA AQUÍ</button>
                 </div>
             </div>
         </section>
         <!-- Descripcion -->
         <!-- Banner -->
         <div class="d-flex align-items-center justify-content-center section-banner-image">
-            <h2 class="header-banner">LA SANACIÓN ES UN REGALO QUE <br> TE MERECES DARTE A TI MISMO</h2>
+            <h2 class="header-banner" data-aos="zoom-in-up">LA SANACIÓN ES UN REGALO QUE <br> TE MERECES DARTE A TI MISMO</h2>
         </div>
         <!-- Banner -->
         <!-- Mapa -->
-        <section>
+        <section id="ubicacion">
             <div class="container-fluid">
-                <div class="row align-items-center justify-content-center section-banner-mapa">
-                    <div class="col-md-12">
-                        <h2 class="text-center title-secction">UBICACIÓN</h2>
-                        <img src="site/sourse/mapa-prana.png" class="mapa-space" alt="Ubicación de comunidad PRANA">
-                    </div>
-                </div>
+                <h2 class="text-center title-secction" data-aos="zoom-in" data-aos-delay="50">UBICACIÓN</h2>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="site/sourse/mapa-prana.png" data-aos="zoom-in" data-aos-delay="450" class="mapa-space" alt="Ubicación de comunidad PRANA">
             </div>
         </section>
         <!-- Copy Mapa -->
@@ -149,69 +146,208 @@
             <div class="container-fluid section-copy-mapa">
                 <div class="row pt-5">
                     <div class="col-md-12">
-                        <h3 class="text-center pt-5 title-copy">Descubre la experiencia de un hogar que va <br> más allá de las expectativas.</h3>
+                        <h3 class="text-center pt-5 title-copy" data-aos="zoom-in-up">Descubre la experiencia de un hogar que va <br> más allá de las expectativas.</h3>
                     </div>
-                    <div class="col-sm-12 col-lg-2 mx-auto">
-                        <button class="btn btn-lg btn-prana mt-5 mb-5" type="button">VER BROCHURE</button>
-                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <button class="btn btn-lg btn-prana mt-5 mb-5 fw-bold" data-aos="zoom-in" data-aos-delay="50" type="button">VER BROCHURE</button>
                 </div>
             </div>
         </section>
         <!-- Copy Mapa -->
         <!-- Rooftop -->
-        <div id="rooftop" class="containerf-fluid section-rooftop">
+        <div id="rooftop" class="container-fluid section-rooftop">
             <h2 class="text-center title-secction">ROOFTOP</h2>
-            <div class="row p-5">
-                <div class="col-lg-12">
-                    <img src="site/sourse/prana-nivel-lof.png" class="img-fluid text-center" alt="Plano de Living Roof">
+            <div class="row ml-5 mr-5">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="site/sourse/prana-nivel-lof.png" class="img-fluid" alt="Plano de Living Roof" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                </div>
+                <h2 class="text-center title-secction">AMENIDADES</h2>
+                <div class="row d-flex justify-content-center icons-amenidades" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="col-sm-4 col-lg-2 col-md-6 text-center pt-5">
+                        <img src="site/sourse/icons/sala-de-juntas.svg" class="icon-svg" alt="Sala de juntas">
+                        <h5 class="pt-3">Sala de juntas</h5>
+                    </div>
+                    <div class="col-sm-4 col-lg-2 col-md-6 text-center pt-5">
+                        <img src="site/sourse/icons/sala-de-terapia.svg" class="icon-svg" alt="Sala de terapia">
+                        <h5 class="pt-3">Sala de terapia</h5>
+                    </div>
+                    <div class="col-sm-4 col-lg-2 col-md-6 text-center pt-5">
+                        <img src="site/sourse/icons/sala-de-meditacion.svg" class="icon-svg" alt="Sala de meditacion">
+                        <h5 class="pt-3">Sala de meditación</h5>
+                    </div>
+                    <div class="col-sm-4 col-lg-2 col-md-6 text-center pt-5">
+                        <img src="site/sourse/icons/area-de-yoga.svg" class="icon-svg" alt="Area de yoga">
+                        <h5 class="pt-3">Area de yoga</h5>
+                    </div>
+                    <div class="col-sm-4 col-lg-2 col-md-6 text-center pt-5">
+                        <img src="site/sourse/icons/gimnacio.svg" class="icon-svg" alt="Gimnasio">
+                        <h5 class="pt-3">Gimnasio</h5>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center icons-amenidades pt-5" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/grill-bar.svg" class="icon-svg" alt="Grill bar">
+                        <h5 class="pt-3">Grill Bar</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/fogata-bajo-las-estrellas.svg" class="icon-svg" alt="Fogata bajo las estrellas">
+                        <h5 class="pt-3">Fogata bajo <br> las estrellas</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/garden-lounge.svg" class="icon-svg" alt="Garden Lounge">
+                        <h5 class="pt-3">Garden Lounge</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/kids.svg" class="icon-svg" alt="Kids">
+                        <h5 class="pt-3">Area de yoga</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/piscina.svg" class="icon-svg" alt="Piscina">
+                        <h5 class="pt-3">Gimnasio</h5>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center icons-amenidades pt-5" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/hurtos-organicos.svg" class="icon-svg" alt="Sala de juntas">
+                        <h5 class="pt-3">Huertos Org&aacute;nicos</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/vestibulo-zen.svg" class="icon-svg" alt="Vestibulo Zen">
+                        <h5 class="pt-3">Vestibulo Zen</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/CCTV.svg" class="icon-svg" alt="CCTV">
+                        <h5 class="pt-3">CCTV</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/elevador.svg" class="icon-svg" alt="Elevador">
+                        <h5 class="pt-3">Elevador</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center">
+                        <img src="site/sourse/icons/chute-de-basura.svg" class="icon-svg" alt="Chute de basura">
+                        <h5 class="pt-3">Chute de basura</h5>
+                    </div>
                 </div>
             </div>
-            <h2 class="text-center title-secction">AMENIDADES</h2>
-            
         </div>
         <!-- Rooftop -->
+        <!-- Banner -->
+        <div class="d-flex align-items-center justify-content-center section-banner-loby">
+            <h2 class="header-banner" data-aos="zoom-in-up">EN PRANA LA SANACIÓN ES UN <br> CAMINO QUE CAMINAMOS <JUNTOS></JUNTOS>
+            </h2>
+        </div>
+        <!-- Banner -->
         <!-- Galeria -->
-        <div class="container">
-            <h2 class="text-center title-secction">GALERÍA</h2>
-            <div class="row">
-                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-                </div>
-                <div class="col-lg-3 mb-4 mb-lg-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-                </div>
-                <div class="col-lg-2 mb-4 mb-lg-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+        <section id="galeria">
+            <div class="container">
+                <h2 class="text-center title-secction">GALERÍA</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="site/sourse/galeria/1-a.jpg" class="w-100 shadow-1-strong mb-4" alt="Boat on Calm Water" />
+                        <img src="site/sourse/galeria/5-a.png" class="w-100 shadow-1-strong mb-4" alt="Wintry Mountain Landscape" />
+                    </div>
+                    <div class="col-lg-3 mb-4 mb-lg-0">
+                        <img src="site/sourse/galeria/2-a.jpg" class="w-100 shadow-1-strong mb-4" alt="Mountains in the Clouds" />
+                        <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong mb-4" alt="Boat on Calm Water" /> -->
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <img src="site/sourse/galeria/3-a.jpg" class="w-100 shadow-1-strong mb-4" alt="Waves at Sea" />
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong mb-4" alt="Yosemite National Park" />
+                    </div>
+                    <div class="col-lg-3 mb-4 mb-lg-0">
+                        <img src="site/sourse/galeria/4-a.jpg" class="w-100 shadow-1-strong mb-4" alt="Waves at Sea" />
+                        <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong mb-4" alt="Yosemite National Park" /> -->
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Galeria -->
         <!-- Modelos -->
-        <section>
-            <div class="container">
+        <section id="#modelos">
+            <div class="container-fluid section-modelos">
                 <div class="row">
                     <h2 class="text-center title-secction">MODELOS</h2>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <h3 class="text-center">AURA</h3>
+                        <h3 class="text-center fw-bold">AURA</h3>
                         <p class="text-center">1 Recamaras</p>
+                        <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <h3 class="text-center">BRISA</h3>
+                        <h3 class="text-center fw-bold">BRISA</h3>
                         <p class="text-center">2 Recamaras</p>
+                        <img src="site/sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Brisa">
                     </div>
                 </div>
             </div>
         </section>
         <!-- Modelos -->
+        <!-- Cotizador -->
+        <section id="cotizador">
+            <div class="container-fluid section-cotizador">
+                <div class="row">
+                    <div class="col-lg-12"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Cotizador -->
+        <section id="cotizador">
+            <div class="container-fluid section-luvora">
+                <div class="row">
+                    <h2 class="text-center title-secction text-white">UN DESARROLLO DE</h2>
+                    <div class="info-luvora">
+                        <div class="col-md-6">
+                            <img src="site/sourse/logo-luvora.svg" class="p-5 img-fluid" alt="Luvora Desarrollos">
+                            <h5 class="text-white">
+                                <li>Desarrolladora enfocada en proyectos de alta plusvalía.</li>
+                                <br>
+                                <li>Constructora Integral.</li>
+                                <br>
+                                <li>Equipo dedicado a compartir servicio y amor.</li>
+                                <br>
+                            </h5>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="site/sourse/badge_luvora.svg" alt="Luvora" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cotizador -->
+        <section id="descargar-brochure">
+            <div class="container-fluid descargar-brochure">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <picture>
+                            <img src="site/sourse/render-contacto.jpg" class="img-fluid" alt="Prana Desarrollos">
+                        </picture>
+                    </div>
+                    <div class="col-lg-5 form-right">
+                        <h2 class="text-left title-secction">DESCARGAR BROCHURE</h2>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                        hbspt.forms.create({
+                            region: "na1",
+                            portalId: "39942104",
+                            formId: "0482bcd0-afac-4ad2-bfa4-1af7da1065e8"
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center align-middle" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="site/sourse/logo-prana-footer.svg" class="space-logo-footer" alt="Prana">
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- Scripts -->
     </main>
     <script>
@@ -237,6 +373,10 @@
         'resizeDuration': 200,
         'wrapAround': true
     })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
     </script>
 </body>
 </div>

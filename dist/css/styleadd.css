@@ -2,7 +2,7 @@
     --prana-color: #443C36;
     --prana-verde: #8DA616;
     --prama-gris: #6C6D62;
-    --prama-cafe-1:#E6DACF;
+    --prama-cafe-1: #E6DACF;
 }
 
 .justify-pa {
@@ -20,8 +20,14 @@
 .banner-hero-image {
     background-image: url('../../site/sourse/header-prana.jpg');
     height: 90vh;
-    background-size: cover;
-    background-position: center;
+    /*    background-size: cover;
+    background-position: center;*/
+}
+
+.icon-amenidades:hover {
+    background-color: var(--prana-color);
+    color: white;
+    border-radius: 16px;
 }
 
 .btn-prana {
@@ -40,7 +46,7 @@
     text-align: center;
     letter-spacing: 0.05em;
     font-weight: bold;
-    padding: 100px 0;
+    padding: 80px 0;
     color: var(--prana-color);
 }
 
@@ -89,18 +95,62 @@
     background-position: center;
 }
 
+.section-modelos {
+    background-color: var(--prama-cafe-1);
+/*    padding: 0 0 10rem 0;*/
+}
+
 .section-copy-mapa {
     background-color: white;
 }
 
+.section-cotizador {
+    background-image: url('../../site/sourse/background-cotizador.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-luvora {
+    background-color: black;
+    height: 100vh;
+}
+
+.section-contacto {}
+
+
+
+.info-luvora {
+    padding: 0 15rem;
+}
+
+
+
+.footer {
+    background-image: url('../../site/sourse/background-footer.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.space-logo-footer {
+    padding-top: 10rem;
+}
+
 .mapa-space {
-    width:80vw;
-        justify-content: space-evenly;
+    width: 80vw;
+    justify-content: space-evenly;
     align-items: center;
 
 }
+
 .section-rooftop {
     background-color: var(--prama-cafe-1);
+    padding: 0 0 10rem 0;
+}
+
+.icons-amenidades {
+    padding: 0 5rem;
 }
 
 .header-banner {
