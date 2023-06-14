@@ -190,3 +190,9 @@
     color: #FFFFFF;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+@media (min-width: 1000px) {
+  .nav.navbar.navbar-expand-md.sticky-top.border-bottom.navigation-prana.menu-desktop {
+    display: none;
+  }
+}

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-md sticky-top border-bottom navigation-prana" data-bs-theme="dark" style="background: rgba(69, 57, 50, 0.85);">
+    <nav class="navbar navbar-expand-md sticky-top border-bottom navigation-prana menu-desktop" data-bs-theme="dark" style="background: rgba(69, 57, 50, 0.85);">
         <div class="container-fluid">
             <a class="navbar-brand d-md-none" href="#">
                 <img src="sourse/isologo.svg" alt="">
@@ -45,26 +45,8 @@
                 </div>
             </div>
         </div>
-    </nav> -->
-    <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom navigation-prana">
-      <div class="col-md-3 mb-md-0">
-        <a href="sourse/logo-header-prana.svg" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="sourse/isologo.svg" alt="">
-        </a>
-      </div>
-      <nav class="">
-          <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2">Features</a></li>
-        <li><a href="#" class="nav-link px-2">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
-      </ul>
-      </nav>
-      
-    </header>
-  </div>
+    </nav>
+    </div>
     <main>
         <div class="container-fluid p-5 banner-hero-image">
             <div class="row py-5 align-items-center">
@@ -449,6 +431,12 @@
         link.download = "#";
         link.click();
     }
+    </script>
+    <script>
+var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+  return new bootstrap.Offcanvas(offcanvasEl)
+})
     </script>
 </body>
 </div>
