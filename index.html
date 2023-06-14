@@ -301,16 +301,14 @@
                             <img src="site/sourse/render-contacto.jpg" class="img-fluid" alt="Prana Desarrollos">
                         </picture>
                     </div>
-                    <div class="col-lg-5 form-right">
+                    <div class="col-lg-4 form-right">
                         <h2 class="text-left title-secction">DESCARGAR BROCHURE</h2>
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                        <script>
-                            hbspt.forms.create({
-                            region: "na1",
-                            portalId: "39942104",
-                            formId: "0482bcd0-afac-4ad2-bfa4-1af7da1065e8"
-                        });
-                        </script>
+                        <form>
+                            <label class="label" ty for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" class="form-control form-control-lg">
+                            <br>
+                            <button type="btn btn-secondary btn-lg" type="button" onclick="validarCorreo()">Descargar PDF</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -451,6 +449,25 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
+    </script>
+    <script>
+    function validarCorreo() {
+        var correo = document.getElementById("correo").value;
+        // Aquí puedes realizar la validación del correo como desees
+
+        // Ejemplo de validación básica utilizando una expresión regular
+        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!regex.test(correo)) {
+            alert("Correo electrónico no válido");
+            return false;
+        }
+
+        // Descarga del archivo PDF
+        var link = document.createElement("a");
+        link.href = "brochure.pdf"; // Reemplaza "ruta/al/archivo.pdf" con la ruta real del archivo PDF
+        link.download = "#";
+        link.click();
+    }
     </script>
 </body>
 </div>
