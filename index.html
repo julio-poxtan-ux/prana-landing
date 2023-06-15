@@ -9,6 +9,7 @@
     <title>PRANA - Comunidad Holística</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/addstyle.css">
+    <link rel="stylesheet" href="dist/simple-lightbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -16,8 +17,7 @@
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-md sticky-top border-bottom navigation-prana menu-desktop" data-bs-theme="dark" style="background: rgba(69, 57, 50, 0.85);">
+    <nav class="navbar navbar-expand-md sticky-top navigation-prana menu-desktop" data-bs-theme="dark" style="background: rgba(69, 57, 50, 0.85);">
         <div class="container-fluid">
             <a class="navbar-brand d-md-none" href="#">
                 <img src="sourse/isologo.svg" alt="">
@@ -240,7 +240,7 @@
                     <div class="col-sm-12 col-md-6" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <h3 class="text-center fw-bold">LOTUS</h3>
                         <h4 class="text-center">2 Rec&aacute;maras</h4>
-                        <img src="sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" alt="Modelo Brisa">
+                        <img src="sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" alt="Modelo Brisa" ata-lightbox="image-1" data-title="My caption">
                     </div>
                 </div>
             </div>
@@ -271,7 +271,8 @@
                             <label class="label" ty for="correo">Correo electrónico:</label>
                             <input type="email" id="correo" name="correo" class="form-control form-control-lg">
                             <br>
-                            <button type="btn btn-secondary btn-lg" type="button" onclick="validarCorreo()">Descargar PDF</button>
+                            <a href=""></a>
+                            <button class="btn btn-lg btn-prana mt-1 mb-5 fw-bold" type="button" onclick="validarCorreo()">Descargar PDF</button>
                         </form>
                     </div>
                 </div>
@@ -316,21 +317,24 @@
     <div class="modal fade modal-lg" id="nivel-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nivel 4</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
                 <div class="modal-body">
+                    <div class="d-flex">
+                        <h1 class="header-nivel" id="exampleModalLabel">Modelo Aura 1 Recamara</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3">
+                                <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
                             </div>
                             <div class="col-md-3">
+                                <div id="infoNivel1">
+                                    <img src="sourse/galeria/11-a.png" class="img-fluid" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
                             </div>
                         </div>
                     </div>
@@ -404,6 +408,7 @@
     <script src="js/ppo"></script>
     <script src="js/lightbox/js/lightbox.js"></script>
     <script src="js/offcanvas.js"></script>
+    <script src="dist/simple-lightbox.js"></script>
     <script>
     $()
     lightbox.option({
@@ -435,6 +440,15 @@
     }
     </script>
     <script>
+    // ocultar
+    function toggleDiv() {
+        var div = document.getElementById("miDiv");
+        if (div.style.display === "none") {
+            div.style.display = "block";
+        } else {
+            div.style.display = "none";
+        }
+    }
     </script>
 </body>
 </div>
