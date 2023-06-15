@@ -74,7 +74,7 @@
 }
 
 .section-banner-image {
-    background-image: url('../banner-fondo-prana.jpg');
+    background-image: url('../sourse/banner-fondo-prana.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
