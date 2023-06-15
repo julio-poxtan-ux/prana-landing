@@ -32,7 +32,6 @@
 
 .btn-prana {
     background-color: var(--prana-verde);
-    color: white;
 }
 
 .btn-prana:hover {
@@ -192,7 +191,65 @@
 }
 
 .header-nivel {
-    font-size: 5rem;
+    font-size: 2rem;
+}
+
+.lista-room li {
+    font-size: 1.25rem;
+}
+
+.btn-close {
+    border-radius: 100%;
+    border: 3px solid var(--prana-verde);
+    padding: 15px;
+}
+
+.info-precios {
+    background: #e3e3e3;
+    border-left: 1px solid #8ba415;
+    border-right: 1px solid #8ba415;
+    border-bottom: 1px solid #8ba415;
+}
+
+/*Estilos de galeria*/
+
+/* Main CSS */
+.grid-wrapper>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.contenido {
+    display: none;
 }
 
 @media (min-width: 1000px) {

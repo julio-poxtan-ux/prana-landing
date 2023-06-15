@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/addstyle.css">
     <link rel="stylesheet" href="dist/simple-lightbox.css">
+    <link rel="stylesheet" href="js/lightbox/css/lightbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -202,24 +203,54 @@
         <!-- Banner -->
         <!-- Galeria -->
         <section id="galeria">
-            <div class="container" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <h2 class="text-center title-secction">GALERÍA</h2>
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                        <img src="site/sourse/galeria/1-a.jpg" class="w-100 shadow-1-strong mb-4" alt="Boat on Calm Water" />
-                        <img src="site/sourse/galeria/5-a.png" class="w-100 shadow-1-strong mb-4" alt="Wintry Mountain Landscape" />
-                    </div>
-                    <div class="col-lg-3 mb-4 mb-lg-0">
-                        <img src="site/sourse/galeria/2-a.jpg" class="w-100 shadow-1-strong mb-4" alt="Mountains in the Clouds" />
-                        <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong mb-4" alt="Boat on Calm Water" /> -->
-                    </div>
-                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                        <img src="site/sourse/galeria/3-a.jpg" class="w-100 shadow-1-strong mb-4" alt="Waves at Sea" />
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong mb-4" alt="Yosemite National Park" />
-                    </div>
-                    <div class="col-lg-3 mb-4 mb-lg-0">
-                        <img src="site/sourse/galeria/4-a.jpg" class="w-100 shadow-1-strong mb-4" alt="Waves at Sea" />
-                        <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong mb-4" alt="Yosemite National Park" /> -->
+                    <div class="col-lg-12">
+                        <h2 class="text-center title-secction">GALERÍA</h2>
+                        <div class="photo-gallery">
+                            <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative;">
+                                <div class="col-md-3 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                                    <div class="card">
+                                        <img src="sourse/galeria/1-a.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; left: 33.3333%; top: 0px;">
+                                    <div class="card">
+                                        <img src="sourse/galeria/2-a.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
+                                    <div class="card">
+                                        <img src="sourse/galeria/3-a.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; left: 33.3333%; top: 171px;">
+                                    <div class="card">
+                                        <img src="sourse/galeria/4-a.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+                                    <div class="card">
+                                        <img src="sourse/galeria/5-a.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; left: 0%; top: 362px;">
+                                    <div class="card">
+                                        <img src="sourse/galeria/6-a.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; left: 66.6667%; top: 378px;">
+                                    <div class="card">
+                                        <img src="sourse/galeria/7-a.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; left: 33.3333%; top: 488px;">
+                                    <div class="card">
+                                        <img src="sourse/galeria/8-a.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -235,12 +266,12 @@
                     <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <h3 class="text-center fw-bold">AURA</h3>
                         <p class="text-center">1 Rec&aacute;mara</p>
-                        <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" alt="Modelo Aura">
+                        <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" alt="Modelo Aura" data-lightbox="galeria" data-title="Aura">
                     </div>
                     <div class="col-sm-12 col-md-6" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <h3 class="text-center fw-bold">LOTUS</h3>
                         <h4 class="text-center">2 Rec&aacute;maras</h4>
-                        <img src="sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" alt="Modelo Brisa" ata-lightbox="image-1" data-title="My caption">
+                        <img src="sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" alt="Modelo Brisa" data-lightbox="galeria" data-title="Lotus">
                     </div>
                 </div>
             </div>
@@ -257,7 +288,7 @@
         </section>
         <!-- Cotizador -->
         <!-- Cotizador -->
-        <section id="descargar-brochure">
+        <section id="gar-brochure">
             <div class="container-fluid descargar-brochure" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div class="row">
                     <div class="col-lg-7">
@@ -314,35 +345,116 @@
         <!-- Scripts -->
     </main>
     <!-- Modales cotizador -->
+    <div class="modal fade modal-lg" id="nivel-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="fondo-modal">
+                        <div class="contenedor">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary" type="button">
+                                    Center Right
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="d-flex justify-content-between">
+                        <img src="sourse/niveles/Nivel-2-4-min.png" class="img-fluid" width="900px" alt="">
+                        <div class="position-absolute">
+                            <button onclick="mostrarContenido('contenido1')">Botón 1</button>
+                            <button onclick="mostrarContenido('contenido2')">Botón 2</button>
+                            <button onclick="mostrarContenido('contenido3')">Botón 3</button>
+                            <button onclick="mostrarContenido('contenido4')">Botón 4</button>
+                            <div id="contenido1" class="contenido">
+                                <h2>Contenido 1</h2>
+                                <p>Este es el contenido del botón 1.</p>
+                                <button id="botonRegresar" onclick="mostrarContenido(null)">Regresar</button>
+                            </div>
+                            <div id="contenido2" class="contenido">
+                                <h2>Contenido 2</h2>
+                                <p>Este es el contenido del botón 2.</p>
+                                <button id="botonRegresar" onclick="mostrarContenido(null)">Regresar</button>
+                            </div>
+                            <div id="contenido3" class="contenido">
+                                <h2>Contenido 3</h2>
+                                <p>Este es el contenido del botón 3.</p>
+                                <button id="botonRegresar" onclick="mostrarContenido(null)">Regresar</button>
+                            </div>
+                            <div id="contenido4" class="contenido">
+                                <h2>Contenido 4</h2>
+                                <p>Este es el contenido del botón 4.</p>
+                                <button id="botonRegresar" onclick="mostrarContenido(null)">Regresar</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade modal-lg" id="nivel-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="d-flex">
-                        <h1 class="header-nivel" id="exampleModalLabel">Modelo Aura 1 Recamara</h1>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="history.back()" class="btn btn-sm btn-outline-secondary">Regresar</button>
+                        <h1 class="header-nivel text-center fw-bold" id="exampleModalLabel">Modelo Aura 1 Recamara - Nivel 4</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="container">
+                    <hr>
+                    <div id="Nivel4-1" class="container p-2">
                         <div class="row">
-                            <div class="col-md-3">
-                                <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                            <div class="col-lg-4">
+                                <h3 class="fw-bold pt-4">Caracteristicas</h3>
+                                <ul class="lista-room pt-3">
+                                    <li>1 cajón de estacionamiento techado.</li>
+                                    <li>1.5 Baños.</li>
+                                    <li>Sala comedor corrido.</li>
+                                    <li>Walk in closet.</li>
+                                    <li>Área de lavado.</li>
+                                    <li>Isla de granito en cocina.</li>
+                                    <li>Terraza.</li>
+                                    <li>Espacio para instalar un closet de blancos.</li>
+                                </ul>
                             </div>
-                            <div class="col-md-3">
-                                <div id="infoNivel1">
-                                    <img src="sourse/galeria/11-a.png" class="img-fluid" alt="">
+                            <div class="col-lg-4">
+                                <img src="sourse/niveles/aura-min.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-4">
+                                <!-- <button onclick="mostrarContenido(null)">Mostrar todos los botones</button> -->
+                                <a href="#precios30" class="btn btn-lg btn-prana mt-4" aria-controls="precios30" aria-expanded="false" data-bs-toggle="collapse">30% de enganche 30% contraentrega</a>
+                                <div id="precios30" class="collapse">
+                                    <div class="p-4 info-precios">
+                                        <h5 class="">Precio final:$ $775,500.00 </h5>
+                                        <h5 class="">Enganche: 30%</h5>
+                                        <h5 class="">Contraentrega: 30%</h5>
+                                        <h5 class="">% de descuento:-$50,000</h5>
+                                    </div>
+                                </div>
+                                <a href="#precios50" class="btn btn-lg btn-prana mt-4" data-bs-toggle="collapse">50% de enganche 30% contraentrega</a>
+                                <div id="precios50" class="collapse">
+                                    <div class="p-4 info-precios">
+                                        <h5 class="">Precio final: <strong>$775,500.00</strong> </h5>
+                                        <h5 class="">Enganche: 50%</h5>
+                                        <h5 class="">Contraentrega: 50%</h5>
+                                        <h5 class="">% de descuento:-$50,000</h5>
+                                    </div>
+                                </div>
+                                <a href="#precios90" class="btn btn-lg btn-prana mt-4" data-bs-toggle="collapse">90% de enganche 10% contraentrega</a>
+                                <div id="precios90" class="collapse">
+                                    <div class="p-4 info-precios">
+                                        <h5 class="">Precio final: <strong>$775,500.00</strong> </h5>
+                                        <h5 class="">Enganche: 90%</h5>
+                                        <h5 class="">Contraentrega: 90%</h5>
+                                        <h5 class="">% de descuento:-$50,000</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="modal fade modal-lg" id="nivel-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -374,7 +486,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade modal-lg" id="nivel-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade modal-lg" id="nivel-0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -391,9 +503,6 @@
     </div>
     <!-- Modales cotizador -->
     <script>
-    const carousel = new bootstrap.Carousel('#carouselExampleAutoplaying');
-    </script>
-    <script>
     const clip = document.querySelectorAll(".hover-to-play");
     for (let i = 0; i < clip.length; i++) {
         clip[i].addEventListener("mouseenter", function(e) {
@@ -405,10 +514,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/ppo"></script>
-    <script src="js/lightbox/js/lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="js/offcanvas.js"></script>
-    <script src="dist/simple-lightbox.js"></script>
     <script>
     $()
     lightbox.option({
@@ -420,33 +527,30 @@
     <script>
     AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script>
-    function validarCorreo() {
-        var correo = document.getElementById("correo").value;
-        // Aquí puedes realizar la validación del correo como desees
-
-        // Ejemplo de validación básica utilizando una expresión regular
-        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!regex.test(correo)) {
-            alert("Correo electrónico no válido");
-            return false;
+    function mostrarContenido(id) {
+        // Ocultar todos los botones y contenidos
+        var botones = document.getElementsByTagName("button");
+        for (var i = 0; i < botones.length; i++) {
+            botones[i].style.display = "none";
+        }
+        var contenidos = document.getElementsByClassName("contenido");
+        for (var i = 0; i < contenidos.length; i++) {
+            contenidos[i].style.display = "none";
         }
 
-        // Descarga del archivo PDF
-        var link = document.createElement("a");
-        link.href = "brochure.pdf"; // Reemplaza "ruta/al/archivo.pdf" con la ruta real del archivo PDF
-        link.download = "#";
-        link.click();
-    }
-    </script>
-    <script>
-    // ocultar
-    function toggleDiv() {
-        var div = document.getElementById("miDiv");
-        if (div.style.display === "none") {
-            div.style.display = "block";
+        if (id === null) {
+            // Mostrar todos los botones
+            for (var i = 0; i < botones.length; i++) {
+                botones[i].style.display = "block";
+            }
         } else {
-            div.style.display = "none";
+            // Mostrar el contenido seleccionado y el botón de regresar
+            var contenido = document.getElementById(id);
+            contenido.style.display = "block";
+            var botonRegresar = document.getElementById("botonRegresar");
+            botonRegresar.style.display = "block";
         }
     }
     </script>
