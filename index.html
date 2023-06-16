@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/addstyle.css">
-    <link rel="stylesheet" href="dist/simple-lightbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -20,13 +19,27 @@
 <body>
     <nav class="navbar navbar-expand-md sticky-top navigation-prana menu-desktop" data-bs-theme="dark" style="background: rgba(69, 57, 50, 0.85);">
         <div class="container-fluid">
-            <a class="navbar-brand d-md-none" href="#">
+            <!-- <a class="navbar-brand d-md-none" href="#">
                 <img src="sourse/isologo.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+            </a> -->
+            <ul class="navbar-nav flex-grow-1 justify-pa">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="sourse/isologo.svg" alt="PRANA">
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#descripcion">ACERCA DE PRANA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ubicacion">UBICACIÓN</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rooftop">ROOFTOP/AMENIDADES</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">GALERÍA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cotizador">COTIZADOR</a></li>
+                <li class="nav-item"><a class="nav-link" href="#descargar-brochure">BROCHURE</a></li>
+                <li class="nav-item"><a class="nav-link" href="#acerca-de-luvora">ACERCA DE LUVORA</a></li>
+            </ul>
+            <!--  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            </button> -->
+            <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -47,7 +60,7 @@
                         <li class="nav-item"><a class="nav-link" href="#acerca-de-luvora">ACERCA DE LUVORA</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
     </div>
@@ -106,7 +119,7 @@
                 <h2 class="text-center title-secction">UBICACIÓN</h2>
             </div>
             <div class="d-flex align-items-center justify-content-center">
-                <img src="sourse/mapa-prana.png" class="mapa-space img-fluid" alt="Ubicación de comunidad PRANA">
+                <img src="sourse/mapa-prana.png" class="mapa-space img-fluid" alt="Ubicación de comunidad PRANA" data-bs-target="#nivel-1" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="400">
             </div>
         </section>
         <!-- Copy Mapa -->
@@ -249,12 +262,12 @@
                             <div class="row" data-masonry="{&quot;percentPosition&quot;: false }" style="position: relative;">
                                 <div class="col-md-3 mb-4" style="position: absolute;">
                                     <a data-fslightbox href="sourse/galeria/hd/01_PRANA_AEREO.jpg">
-                                        <img src="sourse/galeria/1-a.jpg" alt="" class="img-fluid">
+                                        <img src="sourse/galeria/1-a.jpg" alt="PRANA Aereo" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-md-3 mb-4" style="position: absolute; ">
                                     <a data-fslightbox href="sourse/galeria/hd/07_PRANA_MEDITACIÓN.jpg">
-                                        <img src="sourse/galeria/2-a.jpg" alt="" class="img-fluid">
+                                        <img src="sourse/galeria/2-a.jpg" alt="PRANA Meditacion" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-md-3 mb-4" style="position: absolute; ">
@@ -323,7 +336,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <h3 class="text-center fw-bold">AURA</h3>
-                        <p class="text-center">1 Rec&aacute;mara</p>
+                        <h4 class="text-center">1 Rec&aacute;mara</h4>
                         <a data-fslightbox href="sourse/niveles/aura-min.png">
                             <img src="sourse/niveles/aura-min.png" class="img-fluid mx-auto d-block" alt="Modelo Aura" data-lightbox="galeria" data-title="Aura">
                         </a>
@@ -576,7 +589,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="js/offcanvas.js"></script>
     <script src="js/fslightbox.js"></script>
     <script>
@@ -595,6 +607,35 @@
     var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
     </script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script>
+    function validarCorreo() {
+        var correo = document.getElementById("correo").value;
+        // Aquí puedes realizar la validación del correo como desees
+
+        // Ejemplo de validación básica utilizando una expresión regular
+        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!regex.test(correo)) {
+            alert("Correo electrónico no válido");
+            return false;
+
+            function mostrarContenido(id) {
+                // Ocultar todos los botones y contenidos
+                var botones = document.getElementsByTagName("button");
+                for (var i = 0; i < botones.length; i++) {
+                    botones[i].style.display = "none";
+                }
+                var contenidos = document.getElementsByClassName("contenido");
+                for (var i = 0; i < contenidos.length; i++) {
+                    contenidos[i].style.display = "none";
+                }
+
+                // Descarga del archivo PDF
+                var link = document.createElement("a");
+                link.href = "brochure.pdf"; // Reemplaza "ruta/al/archivo.pdf" con la ruta real del archivo PDF
+                link.download = "#";
+                link.click();
+            }
+    </script>
     <script>
     function mostrarContenido(id) {
         // Ocultar todos los botones y contenidos
