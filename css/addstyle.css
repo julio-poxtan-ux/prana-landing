@@ -252,6 +252,10 @@
     display: none;
 }
 
+.video video {
+    height: 80vh;
+}
+
 @media (min-width: 1000px) {
     .nav.navbar.navbar-expand-md.sticky-top.border-bottom.navigation-prana.menu-desktop {
         display: none;
