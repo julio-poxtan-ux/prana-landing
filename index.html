@@ -8,9 +8,9 @@
     <link rel="icon" href="sourse/favicon.png">
     <title>PRANA - Comunidad Holística</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/addstyle.css">
     <link rel="stylesheet" href="dist/simple-lightbox.css">
-    <link rel="stylesheet" href="js/lightbox/css/lightbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -33,9 +33,11 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav flex-grow-1 justify-pa">
-                        <li class="nav-item"><a class="nav-link" href="#">
-                                <img src="sourse/isologo.svg" alt="">
-                            </a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="sourse/isologo.svg" alt="PRANA">
+                            </a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#descripcion">ACERCA DE PRANA</a></li>
                         <li class="nav-item"><a class="nav-link" href="#ubicacion">UBICACIÓN</a></li>
                         <li class="nav-item"><a class="nav-link" href="#rooftop">ROOFTOP/AMENIDADES</a></li>
@@ -115,7 +117,8 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-center">
-                    <button class="btn btn-lg btn-prana mt-5 mb-5 fw-bold" data-aos="zoom-in" data-aos-delay="50" type="button">VER BROCHURE</button>
+                    <a class="btn btn-lg btn-prana mt-5 mb-5 fw-bold" href="#gar-brochure" data-aos="zoom-in" data-aos-delay="50">VER BROCHURE</a>
+                    <!-- <button class=""type="button">VER BROCHURE</button> -->
                 </div>
             </div>
         </section>
@@ -209,47 +212,99 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h2 class="text-center title-secction">GALERÍA</h2>
-                        <div class="photo-gallery">
-                            <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative;">
-                                <div class="col-md-3 mb-4" style="position: absolute; left: 0%; top: 0px;">
-                                    <div class="card">
-                                        <img src="sourse/galeria/1-a.jpg" alt="">
-                                    </div>
+                        <!-- <div class="gallery-grid mb-5 mt-5">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a data-fslightbox href="sourse/galeria/hd/01_PRANA_AEREO.jpg">
+                                        <img src="sourse/galeria/1-a.jpg" alt="" class="img-fluid">
+                                    </a>
+                                     <a data-fslightbox href="sourse/galeria/hd/01_PRANA_AEREO.jpg">
+                                        <img src="sourse/galeria/5-a.png" alt="" class="img-fluid mt-3">
+                                    </a>
                                 </div>
-                                <div class="col-md-3 mb-4" style="position: absolute; left: 33.3333%; top: 0px;">
-                                    <div class="card">
-                                        <img src="sourse/galeria/2-a.jpg" alt="">
-                                    </div>
+                                <div class="col-md-3">
+                                    <a data-fslightbox href="sourse/galeria/hd/01_PRANA_AEREO.jpg">
+                                        <img src="sourse/galeria/2-a.jpg" alt="" class="img-fluid">
+                                    </a>
                                 </div>
-                                <div class="col-md-3 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
-                                    <div class="card">
-                                        <img src="sourse/galeria/3-a.jpg" alt="">
-                                    </div>
+                                <div class="col-md-3">
+                                    <a data-fslightbox href="sourse/galeria/hd/01_PRANA_AEREO.jpg">
+                                        <img src="sourse/galeria/3-a.jpg" alt="" class="img-fluid">
+                                    </a>
                                 </div>
-                                <div class="col-md-3 mb-4" style="position: absolute; left: 33.3333%; top: 171px;">
-                                    <div class="card">
-                                        <img src="sourse/galeria/4-a.jpg" alt="">
-                                    </div>
+                                <div class="col-md-3">
+                                    <a data-fslightbox href="sourse/galeria/hd/01_PRANA_AEREO.jpg">
+                                        <img src="sourse/galeria/4-a.jpg" alt="" class="img-fluid">
+                                    </a>
                                 </div>
-                                <div class="col-md-3 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
-                                    <div class="card">
-                                        <img src="sourse/galeria/5-a.png" alt="">
-                                    </div>
+                                <div class="col-md-3 position-relative" style="position: absolute; ">
+                                    <a data-fslightbox href="sourse/galeria/hd/01_PRANA_AEREO.jpg">
+                                        <img src="sourse/galeria/4-a.jpg" alt="" class="img-fluid">
+                                    </a>
                                 </div>
-                                <div class="col-md-3 mb-4" style="position: absolute; left: 0%; top: 362px;">
-                                    <div class="card">
-                                        <img src="sourse/galeria/6-a.png" alt="">
-                                    </div>
+                            </div>
+                        </div> -->
+                        <div class="photo-gallery mb-5">
+                            <div class="row" data-masonry="{&quot;percentPosition&quot;: false }" style="position: relative;">
+                                <div class="col-md-3 mb-4" style="position: absolute;">
+                                    <a data-fslightbox href="sourse/galeria/hd/01_PRANA_AEREO.jpg">
+                                        <img src="sourse/galeria/1-a.jpg" alt="" class="img-fluid">
+                                    </a>
                                 </div>
-                                <div class="col-md-3 mb-4" style="position: absolute; left: 66.6667%; top: 378px;">
-                                    <div class="card">
-                                        <img src="sourse/galeria/7-a.png" alt="">
-                                    </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; ">
+                                    <a data-fslightbox href="sourse/galeria/hd/07_PRANA_MEDITACIÓN.jpg">
+                                        <img src="sourse/galeria/2-a.jpg" alt="" class="img-fluid">
+                                    </a>
                                 </div>
-                                <div class="col-md-3 mb-4" style="position: absolute; left: 33.3333%; top: 488px;">
-                                    <div class="card">
-                                        <img src="sourse/galeria/8-a.png" alt="">
-                                    </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; ">
+                                    <a data-fslightbox href="sourse/galeria/hd/05_PRANA_BUSSINES.jpg">
+                                        <img src="sourse/galeria/3-a.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-4" style="position: absolute;">
+                                    <a data-fslightbox href="sourse/galeria/hd/13_PRANA_AMENIDADES.jpg">
+                                        <img src="sourse/galeria/5-a.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute;">
+                                    <a data-fslightbox href="sourse/galeria/hd/18_PRANA_MOD-B_TERRAZA.jpg">
+                                        <img src="sourse/galeria/4-a.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; ">
+                                    <a data-fslightbox href="sourse/galeria/hd/19_PRANA_MOD-B_RECÁMARA.jpg">
+                                        <img src="sourse/galeria/7-a.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-4" style="position: absolute;">
+                                    <a data-fslightbox href="sourse/galeria/hd/11_PRANA_FIREPIT.jpg">
+                                        <img src="sourse/galeria/8-a.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute; ">
+                                    <a data-fslightbox href="sourse/galeria/hd/06_PRANA_TERAPIA.jpg">
+                                        <img src="sourse/galeria/6-a.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute;">
+                                    <a data-fslightbox href="sourse/galeria/hd/04_PRANA_VESTIBULO.jpg">
+                                        <img src="sourse/galeria/9-a.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-4" style="position: absolute;">
+                                    <a data-fslightbox href="sourse/galeria/hd/03_PRANA_LOBBY.jpg">
+                                        <img src="sourse/galeria/12-a.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute;">
+                                    <a data-fslightbox href="sourse/galeria/hd/09_PRANA_YOGA.jpg">
+                                        <img src="sourse/galeria/11-a.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-4" style="position: absolute;">
+                                    <a data-fslightbox href="sourse/galeria/hd/08_PRANA_GIMNASIO.jpg">
+                                        <img src="sourse/galeria/10-a.png" alt="" class="img-fluid">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -268,12 +323,16 @@
                     <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <h3 class="text-center fw-bold">AURA</h3>
                         <p class="text-center">1 Rec&aacute;mara</p>
-                        <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" alt="Modelo Aura" data-lightbox="galeria" data-title="Aura">
+                        <a data-fslightbox href="sourse/galeria/modelo_aura.png">
+                            <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" alt="Modelo Aura" data-lightbox="galeria" data-title="Aura">
+                        </a>
                     </div>
                     <div class="col-sm-12 col-md-6" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <h3 class="text-center fw-bold">LOTUS</h3>
                         <h4 class="text-center">2 Rec&aacute;maras</h4>
-                        <img src="sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" alt="Modelo Brisa" data-lightbox="galeria" data-title="Lotus">
+                        <a data-fslightbox href="sourse/galeria/modelo_brisa.png">
+                            <img src="sourse/galeria/modelo_brisa.png" class="img-fluid mx-auto d-block" alt="Modelo Brisa" data-lightbox="galeria" data-title="Aura">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -302,7 +361,7 @@
                         <h2 class="text-left title-secction">DESCARGAR BROCHURE</h2>
                         <form>
                             <label class="label" ty for="correo">Correo electrónico:</label>
-                            <input type="email" id="correo" name="correo" class="form-control form-control-lg">
+                            <input type="email" id="correo" name="correo" class="form-control form-control-lg" required>
                             <br>
                             <a href=""></a>
                             <button class="btn btn-lg btn-prana mt-1 mb-5 fw-bold" type="button" onclick="validarCorreo()">Descargar PDF</button>
@@ -516,8 +575,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="js/offcanvas.js"></script>
+    <script src="js/fslightbox.js"></script>
     <script>
     $()
     lightbox.option({
@@ -528,6 +588,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
+    </script>
+    <script>
+    var myOffcanvas = document.getElementById('myOffcanvas')
+    var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
     </script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script>
