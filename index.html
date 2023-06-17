@@ -19,31 +19,18 @@
 <body>
     <nav class="navbar navbar-expand-md sticky-top navigation-prana menu-desktop" data-bs-theme="dark" style="background: rgba(69, 57, 50, 0.85);">
         <div class="container-fluid">
-            <!-- <a class="navbar-brand d-md-none" href="#">
+            <a class="navbar-brand d-md-none" href="#">
                 <img src="sourse/isologo.svg" alt="">
-            </a> -->
-            <ul class="navbar-nav flex-grow-1 justify-pa">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="sourse/isologo.svg" alt="PRANA">
-                    </a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#descripcion">ACERCA DE PRANA</a></li>
-                <li class="nav-item"><a class="nav-link" href="#ubicacion">UBICACIÓN</a></li>
-                <li class="nav-item"><a class="nav-link" href="#rooftop">ROOFTOP/AMENIDADES</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">GALERÍA</a></li>
-                <li class="nav-item"><a class="nav-link" href="#cotizador">COTIZADOR</a></li>
-                <li class="nav-item"><a class="nav-link" href="#descargar-brochure">BROCHURE</a></li>
-                <li class="nav-item"><a class="nav-link" href="#acerca-de-luvora">ACERCA DE LUVORA</a></li>
-            </ul>
-            <!--  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav flex-grow-1 justify-pa">
                         <li class="nav-item">
@@ -60,16 +47,15 @@
                         <li class="nav-item"><a class="nav-link" href="#acerca-de-luvora">ACERCA DE LUVORA</a></li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
     </nav>
-    </div>
+    
     <main>
         <div class="container-fluid p-5 banner-hero-image">
             <div class="row py-5 align-items-center">
                 <div class="col-md-4">
                     <img src="sourse/logo-header-prana.svg" alt="Prana" class="img-fluid">
-                    <!-- <h1>Una comunidad enfocada en el desarrollo físico y espiritual.</h1> -->
                     <a class="btn btn-lg btn-prana mt-5 fw-bold" href="#descripcion">CONOCER MÁS</a>
                     <!-- <button class="btn btn-lg btn-prana mt-5 fw-bold" type="button" href="#descripcion">CONOCER MÁS</button> -->
                 </div>
@@ -272,12 +258,12 @@
                                 </div>
                                 <div class="col-md-3 mb-4" style="position: absolute; ">
                                     <a data-fslightbox href="sourse/galeria/hd/05_PRANA_BUSSINES.jpg">
-                                        <img src="sourse/galeria/3-a.jpg" alt="" class="img-fluid">
+                                        <img src="sourse/galeria/3-a.jpg" alt="PRANA Bussines" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-md-6 mb-4" style="position: absolute;">
                                     <a data-fslightbox href="sourse/galeria/hd/13_PRANA_AMENIDADES.jpg">
-                                        <img src="sourse/galeria/5-a.png" alt="" class="img-fluid">
+                                        <img src="sourse/galeria/5-a.png" alt="PRAMA" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-md-3 mb-4" style="position: absolute;">
@@ -367,9 +353,7 @@
             <div class="container-fluid descargar-brochure" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div class="row">
                     <div class="col-lg-7">
-                        <picture>
-                            <img src="sourse/render-contacto.jpg" class="img-fluid" alt="Prana Desarrollos">
-                        </picture>
+                        <img src="sourse/render-contacto.jpg" class="img-fluid" alt="Prana Desarrollos">
                     </div>
                     <div class="col-lg-4 form-right">
                         <h2 class="text-left title-secction">DESCARGAR BROCHURE</h2>
@@ -471,8 +455,8 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="d-flex justify-content-between">
-                        <button onclick="history.back()" class="btn btn-sm btn-outline-secondary">Regresar</button>
-                        <h1 class="header-nivel text-center fw-bold" id="exampleModalLabel">Modelo Aura 1 Recamara - Nivel 4</h1>
+                        <!-- <button onclick="history.back()" class="btn btn-sm btn-outline-secondary">Regresar</button> -->
+                        <h1 class="header-nivel text-left fw-bold" id="exampleModalLabel">Modelo Aura 1 Recamara - Nivel 4</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <hr>
@@ -534,14 +518,15 @@
     <div class="modal fade modal-lg" id="nivel-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nivel 3</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
-                </div>
-                <div class="modal-footer">
+                <div class="vista-contenedor">
+                    <div class="d-flex align-self-center">
+                        <div class="col-md-6"><a href="" class="btn btn-lg btn-piso-modal color-a">Lotus</a></div>
+                        <div class="col-md-6"><a href="" class="btn btn-lg btn-piso-modal color-a">Button 1</a></div>
+                    </div>
+                    <div class="d-flex align-self-center">
+                        <div class="col-md-6"><a href="" class="btn btn-lg btn-piso-modal color-v">Button 1</a></div>
+                        <div class="col-md-6"><a href="" class="btn btn-lg btn-piso-modal color-v">Button 1</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -554,7 +539,7 @@
                     <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="site/sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
+                    <img src="sourse/galeria/modelo_aura.png" class="img-fluid mx-auto d-block" data-aos="zoom-in-up" alt="Modelo Aura">
                 </div>
                 <div class="modal-footer">
                 </div>
@@ -591,20 +576,19 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/offcanvas.js"></script>
     <script src="js/fslightbox.js"></script>
-    <script>
-    $()
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    })
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
     </script>
     <script>
-    var myOffcanvas = document.getElementById('myOffcanvas')
-    var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
+    var myOffcanvas = document.getElementById('Offcanvas')
+    var bsOffcanvas = new bootstrap.Offcanvas(Offcanvas)
+    </script>
+    <script>
+    var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+    var offcanvasList = offcanvasElementList.map(function(offcanvasEl) {
+        return new bootstrap.Offcanvas(offcanvasEl)
+    })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script>
@@ -661,6 +645,22 @@
             botonRegresar.style.display = "block";
         }
     }
+    </script>
+    <script>
+    const navbarToggle = navbar.querySelector("#navbar-toggle");
+    const navbarMenu = document.querySelector("#navbar-menu");
+    const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+    let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+    const toggleNavbarVisibility = () => {
+        isNavbarExpanded = !isNavbarExpanded;
+        navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+    };
+
+    navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+    navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+    navbarMenu.addEventListener("click", toggleNavbarVisibility);
     </script>
 </body>
 </div>
