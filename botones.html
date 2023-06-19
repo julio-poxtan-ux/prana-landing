@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Botones e información</title>
+  <style>
+    .boton {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .informacion {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="botones">
+    <button class="boton" onclick="mostrarInformacion(1)">Botón 1</button>
+    <button class="boton" onclick="mostrarInformacion(2)">Botón 2</button>
+    <button class="boton" onclick="mostrarInformacion(3)">Botón 3</button>
+    <button class="boton" onclick="mostrarInformacion(4)">Botón 4</button>
+  </div>
+
+  <div id="informacionBoton" class="informacion">
+    <div id="informacion1">
+      <p>Información del botón 1.</p>
+      <button onclick="regresar()">Regresar</button>
+    </div>
+    <div id="informacion2">
+      <p>Información del botón 2.</p>
+      <button onclick="regresar()">Regresar</button>
+    </div>
+    <div id="informacion3">
+      <p>Información del botón 3.</p>
+      <button onclick="regresar()">Regresar</button>
+    </div>
+    <div id="informacion4">
+      <p>Información del botón 4.</p>
+      <button onclick="regresar()">Regresar</button>
+    </div>
+  </div>
+
+  <script>
+    function mostrarInformacion(boton) {
+      var botones = document.getElementById('botones');
+      var informacion = document.getElementById('informacionBoton');
+      var informacionBoton = document.getElementById('informacion' + boton);
+
+      botones.style.display = 'none';
+      informacion.style.display = 'block';
+      informacionBoton.style.display = 'block';
+    }
+
+    function regresar() {
+      var botones = document.getElementById('botones');
+      var informacion = document.getElementById('informacionBoton');
+
+      botones.style.display = 'block';
+      informacion.style.display = 'none';
+
+      var informaciones = informacion.getElementsByClassName('informacion');
+      for (var i = 0; i < informaciones.length; i++) {
+        informaciones[i].style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

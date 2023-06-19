@@ -27,10 +27,10 @@
             </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav flex-grow-1 justify-pa">
                         <li class="nav-item">
@@ -50,7 +50,6 @@
             </div>
         </div>
     </nav>
-    
     <main>
         <div class="container-fluid p-5 banner-hero-image">
             <div class="row py-5 align-items-center">
@@ -89,7 +88,7 @@
                     <h3 class="text-center pt-5 title-copy" data-aos="zoom-in-up">Descubre la experiencia de un hogar que va <br> más allá de las expectativas.</h3>
                 </div>
                 <div class="d-grid gap-2 col-sm-12 col-lg-2 mx-auto">
-                    <button class="btn btn-lg btn-prana mt-5 mb-5 fw-bold" type="button">COTIZA AQUÍ</button>
+                    <a class="btn btn-lg btn-prana mt-5 mb-5 fw-bold" href="#cotizador">COTIZA AQUÍ</a>
                 </div>
             </div>
         </section>
@@ -117,7 +116,7 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-center">
-                    <a class="btn btn-lg btn-prana mt-5 mb-5 fw-bold" href="#gar-brochure" data-aos="zoom-in" data-aos-delay="50">VER BROCHURE</a>
+                    <a class="btn btn-lg btn-prana mt-5 mb-5 fw-bold" href="#descargar-brochure" data-aos="zoom-in" data-aos-delay="50">VER BROCHURE</a>
                     <!-- <button class=""type="button">VER BROCHURE</button> -->
                 </div>
             </div>
@@ -410,10 +409,154 @@
                 <div class="modal-body">
                     <div class="fondo-modal">
                         <div class="contenedor">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary" type="button">
-                                    Center Right
-                                </button>
+                            <div class="">
+                                <div class="fondo-nivel-1">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <button class="boton btn btn-lg btn-piso-modal color-a text-center" onclick="mostrarInformacion(1)">1 Recamara</button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <button class="boton btn btn-lg btn-piso-modal color-a text-center" onclick="mostrarInformacion(2)">1 Recamara</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <button class="boton btn btn-lg btn-piso-modal color-v" onclick="mostrarInformacion(3)">2 Recamaras</button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <button class="boton btn btn-lg btn-piso-modal color-v" onclick="mostrarInformacion(4)">2 Recamaras</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="informacionBoton" class="informacion">
+                                    <div id="informacion1">
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <!-- <button onclick="history.back()" class="btn btn-sm btn-outline-secondary">Regresar</button> -->
+                                                <h1 class="header-nivel text-left fw-bold" id="exampleModalLabel">Modelo Aura 1 Recamara - Nivel 4</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <hr>
+                                            <div id="Nivel4-1" class="container p-2">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <h3 class="fw-bold pt-4">Caracteristicas</h3>
+                                                        <ul class="lista-room pt-3">
+                                                            <li>1 cajón de estacionamiento techado.</li>
+                                                            <li>1.5 Baños.</li>
+                                                            <li>Sala comedor corrido.</li>
+                                                            <li>Walk in closet.</li>
+                                                            <li>Área de lavado.</li>
+                                                            <li>Isla de granito en cocina.</li>
+                                                            <li>Terraza.</li>
+                                                            <li>Espacio para instalar un closet de blancos.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <img src="sourse/niveles/aura-min.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <!-- <button onclick="mostrarContenido(null)">Mostrar todos los botones</button> -->
+                                                        <a href="#precios30" class="btn btn-lg btn-prana mt-4" aria-controls="precios30" aria-expanded="false" data-bs-toggle="collapse">30% de enganche 30% contraentrega</a>
+                                                        <div id="precios30" class="collapse">
+                                                            <div class="p-4 info-precios">
+                                                                <h5 class="">Precio final:$ $775,500.00 </h5>
+                                                                <h5 class="">Enganche: 30%</h5>
+                                                                <h5 class="">Contraentrega: 30%</h5>
+                                                                <h5 class="">% de descuento:-$50,000</h5>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#precios50" class="btn btn-lg btn-prana mt-4" data-bs-toggle="collapse">50% de enganche 30% contraentrega</a>
+                                                        <div id="precios50" class="collapse">
+                                                            <div class="p-4 info-precios">
+                                                                <h5 class="">Precio final: <strong>$775,500.00</strong> </h5>
+                                                                <h5 class="">Enganche: 50%</h5>
+                                                                <h5 class="">Contraentrega: 50%</h5>
+                                                                <h5 class="">% de descuento:-$50,000</h5>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#precios90" class="btn btn-lg btn-prana mt-4" data-bs-toggle="collapse">90% de enganche 10% contraentrega</a>
+                                                        <div id="precios90" class="collapse">
+                                                            <div class="p-4 info-precios">
+                                                                <h5 class="">Precio final: <strong>$775,500.00</strong> </h5>
+                                                                <h5 class="">Enganche: 90%</h5>
+                                                                <h5 class="">Contraentrega: 90%</h5>
+                                                                <h5 class="">% de descuento:-$50,000</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="informacion2">
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <!-- <button onclick="history.back()" class="btn btn-sm btn-outline-secondary">Regresar</button> -->
+                                                <h1 class="header-nivel text-left fw-bold" id="exampleModalLabel">Modelo Aura 1 Recamara - Nivel 4</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <hr>
+                                            <div id="Nivel4-1" class="container p-2">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <h3 class="fw-bold pt-4">Caracteristicas</h3>
+                                                        <ul class="lista-room pt-3">
+                                                            <li>1 cajón de estacionamiento techado.</li>
+                                                            <li>1.5 Baños.</li>
+                                                            <li>Sala comedor corrido.</li>
+                                                            <li>Walk in closet.</li>
+                                                            <li>Área de lavado.</li>
+                                                            <li>Isla de granito en cocina.</li>
+                                                            <li>Terraza.</li>
+                                                            <li>Espacio para instalar un closet de blancos.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <img src="sourse/niveles/aura-min.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <!-- <button onclick="mostrarContenido(null)">Mostrar todos los botones</button> -->
+                                                        <a href="#precios30" class="btn btn-lg btn-prana mt-4" aria-controls="precios30" aria-expanded="false" data-bs-toggle="collapse">30% de enganche 30% contraentrega</a>
+                                                        <div id="precios30" class="collapse">
+                                                            <div class="p-4 info-precios">
+                                                                <h5 class="">Precio final:$ $775,500.00 </h5>
+                                                                <h5 class="">Enganche: 30%</h5>
+                                                                <h5 class="">Contraentrega: 30%</h5>
+                                                                <h5 class="">% de descuento:-$50,000</h5>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#precios50" class="btn btn-lg btn-prana mt-4" data-bs-toggle="collapse">50% de enganche 30% contraentrega</a>
+                                                        <div id="precios50" class="collapse">
+                                                            <div class="p-4 info-precios">
+                                                                <h5 class="">Precio final: <strong>$775,500.00</strong> </h5>
+                                                                <h5 class="">Enganche: 50%</h5>
+                                                                <h5 class="">Contraentrega: 50%</h5>
+                                                                <h5 class="">% de descuento:-$50,000</h5>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#precios90" class="btn btn-lg btn-prana mt-4" data-bs-toggle="collapse">90% de enganche 10% contraentrega</a>
+                                                        <div id="precios90" class="collapse">
+                                                            <div class="p-4 info-precios">
+                                                                <h5 class="">Precio final: <strong>$775,500.00</strong> </h5>
+                                                                <h5 class="">Enganche: 90%</h5>
+                                                                <h5 class="">Contraentrega: 90%</h5>
+                                                                <h5 class="">% de descuento:-$50,000</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="informacion3">
+                                        <p>Información del botón 3.</p>
+                                    </div>
+                                    <div id="informacion4">
+                                        <p>Información del botón 4.</p>
+                                    </div>
+                                    <button class="btn btn-lg" onclick="regresar()">Regresar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -647,20 +790,39 @@
     }
     </script>
     <script>
-    const navbarToggle = navbar.querySelector("#navbar-toggle");
-    const navbarMenu = document.querySelector("#navbar-menu");
-    const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
-    let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+    function mostrarInformacion(boton) {
+        // Ocultar los botones
+        var botones = document.getElementsByClassName('boton');
+        for (var i = 0; i < botones.length; i++) {
+            botones[i].style.display = 'none';
+        }
 
-    const toggleNavbarVisibility = () => {
-        isNavbarExpanded = !isNavbarExpanded;
-        navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
-    };
+        // Mostrar la información correspondiente al botón seleccionado
+        var informacion = document.getElementById('informacionBoton');
+        informacion.style.display = 'block';
 
-    navbarToggle.addEventListener("click", toggleNavbarVisibility);
+        // Mostrar el contenido de información correspondiente al botón seleccionado
+        var contenido = document.getElementById('informacion' + boton);
+        contenido.style.display = 'block';
+    }
 
-    navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
-    navbarMenu.addEventListener("click", toggleNavbarVisibility);
+    function regresar() {
+        // Mostrar los botones nuevamente
+        var botones = document.getElementsByClassName('boton');
+        for (var i = 0; i < botones.length; i++) {
+            botones[i].style.display = 'block';
+        }
+
+        // Ocultar la información
+        var informacion = document.getElementById('informacionBoton');
+        informacion.style.display = 'none';
+
+        // Ocultar todos los contenidos de información
+        var contenidos = document.querySelectorAll('[id^=informacion]');
+        for (var i = 0; i < contenidos.length; i++) {
+            contenidos[i].style.display = 'none';
+        }
+    }
     </script>
 </body>
 </div>
