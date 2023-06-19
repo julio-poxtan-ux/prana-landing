@@ -54,15 +54,27 @@
     <!-- Menu principal -->
     <main>
         <!-- Hero -->
-        <div class="container-fluid p-5 banner-hero-image">
+        <!-- <div class="container-fluid padding-hero banner-hero-image">
             <div class="row py-5 justify-content-center">
                 <div class="col-md-12">
                     <img src="sourse/logo-header-prana.svg" alt="Prana" class="img-fluid">
                     <a class="btn btn-lg btn-prana mt-5 fw-bold" href="#descripcion">CONOCER MÁS</a>
-                    <!-- <button class="btn btn-lg btn-prana mt-5 fw-bold" type="button" href="#descripcion">CONOCER MÁS</button> -->
+                    <button class="btn btn-lg btn-prana mt-5 fw-bold" type="button" href="#descripcion">CONOCER MÁS</button>
                 </div>
             </div>
+        </div> -->
+        <div class="banner-hero-image padding-hero">
+        <div class="d-block">
+            <img src="sourse/logo-header-prana.svg" alt="Prana" class="img-fluid">
         </div>
+        <div class="d-block">
+            <a class="btn btn-lg btn-prana mt-5 fw-bold" href="#descripcion">CONOCER MÁS</a>
+        </div>
+        </div>
+        <!-- <div class="d-block align-items-center justify-content-start banner-hero-image">
+            
+            
+        </div> -->
         <!-- Hero -->
         <!-- Banner -->
         <div class="d-flex align-items-center justify-content-center section-banner-loby">
@@ -71,13 +83,15 @@
         </div>
         <!-- Banner -->
         <!-- Video -->
-        <video src="sourse/video/pranav3_1.mp4" type="video/mp4" class="w-100" autoplay controls poster="sourse/screenshot-video.jpg">
+        <video src="sourse/video/pranav3_1.mp4" type="video/mp4" class="w-100" muted controls poster="sourse/screenshot-video.jpg">
+            <source src="sourse/video/pranav3_1.mp4" type="video/mp4" class="w-100" muted controls poster="sourse/screenshot-video.jpg"/>
+            <source src="mivideo.webm" type="video/webm" />
             <p>Su navegador no soporta vídeos HTML5.</p>
         </video>
         <!-- Video -->
         <!-- Descripcion -->
-        <section id="descripcion" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <div class="container mb-5">
+        <section id="descripcion" class="fondo-section-acuarela" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="container pb-5">
                 <h2 class="text-center title-secction">DESCRIPCIÓN</h2>
                 <div class="row justify-content-md-center pt-2">
                     <div class="col-md-4 circle circle-1" data-aos="zoom-in" data-aos-delay="50">
@@ -312,16 +326,22 @@
         </section>
         <!-- Modelos -->
         <!-- Mapa -->
-        <section id="ubicacion">
+        <!-- <section id="ubicacion">
             <div class="container-fluid" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <h2 class="text-center title-secction">UBICACIÓN</h2>
             </div>
             <div class="d-flex align-items-center justify-content-center">
                 <img src="sourse/mapa-prana.png" class="mapa-space img-fluid" alt="Ubicación de comunidad PRANA" data-bs-target="#nivel-1" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="400">
             </div>
-        </section>
+        </section> -->
         <!-- Copy Ubicacion -->
-        <section>
+        <section class="fondo-section-acuarela">
+            <div class="container-fluid" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <h2 class="text-center title-secction">UBICACIÓN</h2>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="sourse/mapa-prana.png" class="mapa-space img-fluid" alt="Ubicación de comunidad PRANA" data-bs-target="#nivel-1" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="400">
+            </div>
             <div class="container-fluid section-copy-mapa">
                 <div class="row pt-5">
                     <div class="col-md-12">
@@ -340,8 +360,6 @@
             <h2 class="header-banner" data-aos="zoom-in-up">LA SANACIÓN ES UN REGALO QUE <br> TE MERECES DARTE A TI MISMO</h2>
         </div>
         <!-- Banner -->
-        
-        
         <!-- Cotizador -->
         <section id="cotizador" class="section-cotizador">
             <div class="d-grid justify-content-center align-items-center btn-niveles">
@@ -361,13 +379,18 @@
                     </div>
                     <div class="col-lg-4 form-right">
                         <h2 class="text-left title-secction">DESCARGAR BROCHURE</h2>
-                        <form>
-                            <label class="label" ty for="correo">Correo electrónico:</label>
-                            <input type="email" id="correo" name="correo" class="form-control form-control-lg" required>
-                            <br>
-                            <a href=""></a>
-                            <button class="btn btn-lg btn-prana mt-1 mb-5 fw-bold" type="button" onclick="validarCorreo()">Descargar PDF</button>
-                        </form>
+                        </head>
+
+                        <body>
+                            <h1>Formulario de Validación</h1>
+                            <form class="" onsubmit="return validarFormulario();">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required><br><br>
+                                <label for="correo">Correo electrónico:</label>
+                                <input type="email" id="correo" name="correo" required><br><br>
+                                <button type="submit">Enviar</button>
+                            </form>
+                            <button id="descargarPDF" style="display: none;">Descargar PDF</button>
                     </div>
                 </div>
             </div>
@@ -719,70 +742,27 @@
     <script>
     AOS.init();
     </script>
-    <script>
-    var myOffcanvas = document.getElementById('Offcanvas')
-    var bsOffcanvas = new bootstrap.Offcanvas(Offcanvas)
-    </script>
-    <script>
-    var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
-    var offcanvasList = offcanvasElementList.map(function(offcanvasEl) {
-        return new bootstrap.Offcanvas(offcanvasEl)
-    })
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script>
-    function validarCorreo() {
+    function validarFormulario() {
+        var nombre = document.getElementById("nombre").value;
         var correo = document.getElementById("correo").value;
-        // Aquí puedes realizar la validación del correo como desees
 
-        // Ejemplo de validación básica utilizando una expresión regular
-        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!regex.test(correo)) {
-            alert("Correo electrónico no válido");
+        // Validar nombre y correo electrónico
+        if (nombre === "" || correo === "") {
+            alert("Por favor, ingresa tu nombre y correo electrónico.");
             return false;
-
-            function mostrarContenido(id) {
-                // Ocultar todos los botones y contenidos
-                var botones = document.getElementsByTagName("button");
-                for (var i = 0; i < botones.length; i++) {
-                    botones[i].style.display = "none";
-                }
-                var contenidos = document.getElementsByClassName("contenido");
-                for (var i = 0; i < contenidos.length; i++) {
-                    contenidos[i].style.display = "none";
-                }
-
-                // Descarga del archivo PDF
-                var link = document.createElement("a");
-                link.href = "brochure.pdf"; // Reemplaza "ruta/al/archivo.pdf" con la ruta real del archivo PDF
-                link.download = "#";
-                link.click();
-            }
-    </script>
-    <script>
-    function mostrarContenido(id) {
-        // Ocultar todos los botones y contenidos
-        var botones = document.getElementsByTagName("button");
-        for (var i = 0; i < botones.length; i++) {
-            botones[i].style.display = "none";
-        }
-        var contenidos = document.getElementsByClassName("contenido");
-        for (var i = 0; i < contenidos.length; i++) {
-            contenidos[i].style.display = "none";
         }
 
-        if (id === null) {
-            // Mostrar todos los botones
-            for (var i = 0; i < botones.length; i++) {
-                botones[i].style.display = "block";
-            }
-        } else {
-            // Mostrar el contenido seleccionado y el botón de regresar
-            var contenido = document.getElementById(id);
-            contenido.style.display = "block";
-            var botonRegresar = document.getElementById("botonRegresar");
-            botonRegresar.style.display = "block";
+        // Validar formato de correo electrónico usando una expresión regular
+        var correoRegex = /^\S+@\S+\.\S+$/;
+        if (!correoRegex.test(correo)) {
+            alert("Por favor, ingresa un correo electrónico válido.");
+            return false;
         }
+
+        // Si la validación es exitosa, enviar el formulario
+        return true;
     }
     </script>
     <script>
