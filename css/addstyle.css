@@ -237,6 +237,7 @@ a.nav-link:active {
 .color-a {
     background-color: rgb(76 135 139 / 30%);
     height: 200px;
+    padding: 8rem;
 }
 
 .color-v {
@@ -252,7 +253,7 @@ a.nav-link:active {
     background-color: rgb(96 119 86 /70%);
 }
 
-.vista-contenedor {
+.vista-contenedor-nivel-1 {
     height: 70vh;
     background-size: cover;
     background-position: center;
