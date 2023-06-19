@@ -131,6 +131,16 @@
     margin: 0 auto;
 }
 
+    fondo-acuarela-blancojpg.jpg
+
+.fondo-section-acuarela {
+    background-image: url('../sourse/fondo-acuarela-blancojpg.jpg');
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
 .footer {
     background-image: url('../sourse/background-footer.jpg');
     width: 70vw;
