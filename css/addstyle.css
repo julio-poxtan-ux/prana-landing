@@ -110,7 +110,7 @@
 
 
 .section-cotizador {
-    background-image: url('../sourse/background-cotizador.jpg');
+    background-image: url('../sourse/fachada-cotizador.jpg');
     height: 90vh;
     background-size: cover;
     background-position: center;
@@ -183,7 +183,7 @@
 }
 
 .btn-niveles {
-    padding-top: 6.2rem;
+    padding-top: 13rem;
 }
 
 .items {
@@ -196,8 +196,8 @@
     color: black;
     font-weight: bold;
     font-size: 2rem;
-    width: min(600px, calc(100vw - 5px), 92vw);
-    height: 110px;
+    width: min(530px, calc(100vw - 5px), 92vw);
+    height: 100px;
     background-color: rgb(255 255 255 / 70%);
     border: 2px inset var(--prana-verde);
 }
