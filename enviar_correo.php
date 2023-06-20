@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Validar y procesar los datos antes de enviar el correo
 
-    $destinatario = 'tu_correo_electronico@example.com';
+    $destinatario = 'julio.poxtan.ux.qgmail.com';
     $asunto = 'Solicitud de descarga de PDF';
     $mensaje = "Nombre: $nombre\n";
     $mensaje .= "Correo electrónico: $correo\n";
