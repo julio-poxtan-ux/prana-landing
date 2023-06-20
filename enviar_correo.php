@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $rutaPDF = 'brochure.pdf';
         if (file_exists($rutaPDF)) {
             header('Content-Type: application/pdf');
-            header('Content-Disposition: attachment; filename="archivo.pdf"');
+            header('Content-Disposition: attachment; filename="brochure.pdf"');
             readfile($rutaPDF);
             exit();
         } else {
