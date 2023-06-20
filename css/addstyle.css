@@ -66,7 +66,11 @@
     margin: 32px auto;
     width: 300px;
     height: 300px;
-    box-shadow: 36px 181px 74px rgba(0, 0, 0, 0.02), 20px 102px 62px rgba(0, 0, 0, 0.06), 9px 45px 46px rgba(0, 0, 0, 0.1), 2px 11px 25px rgba(0, 0, 0, 0.12), 0px 0px 0px rgba(0, 0, 0, 0.12);;
+    box-shadow: 63px 214px 89px rgba(0, 0, 0, 0.01), 35px 120px 75px rgba(0, 0, 0, 0.03), 16px 53px 56px rgba(0, 0, 0, 0.04), 4px 13px 31px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.circle-disponible {
+    background-color: var(--prana-verde);
 }
 
 .circle-1 {
@@ -136,7 +140,15 @@
 .fondo-section-acuarela {
     background-image: url('../sourse/fondo-acuarela-blancojpg.jpg');
     min-height: 500px;
-    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fondo-section-acuarela-cafe {
+    background-image: url('../sourse/fondo-acuarela-oscuro-2.jpg');
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,7 +260,7 @@ a.nav-link:active {
 
 .color-a {
     background-color: rgb(76 135 139 / 30%);
-    height: 200px;
+    height: auto;
     padding: 8rem;
 }
 
@@ -262,7 +274,7 @@ a.nav-link:active {
 }
 
 .color-v:hover {
-    background-color: rgb(96 119 86 /70%);
+    background-color:rgb(171 250 135 / 70%);
 }
 
 .vista-contenedor-nivel-1 {
@@ -452,7 +464,7 @@ a.nav-link:active {
 }
 
 @media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
+    .fondo-nivel-1 {
+        width: auto;
     }
 }
