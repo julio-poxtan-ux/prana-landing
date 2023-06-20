@@ -64,12 +64,12 @@
             </div>
         </div> -->
         <div class="banner-hero-image padding-hero">
-        <div class="d-block">
-            <img src="sourse/logo-header-prana.svg" alt="Prana" class="img-fluid">
-        </div>
-        <div class="d-block">
-            <a class="btn btn-lg btn-prana mt-5 fw-bold" href="#descripcion">CONOCER MÁS</a>
-        </div>
+            <div class="d-block">
+                <img src="sourse/logo-header-prana.svg" alt="Prana" class="img-fluid">
+            </div>
+            <div class="d-block">
+                <a class="btn btn-lg btn-prana mt-5 fw-bold" href="#descripcion">CONOCER MÁS</a>
+            </div>
         </div>
         <!-- <div class="d-block align-items-center justify-content-start banner-hero-image">
             
@@ -84,7 +84,7 @@
         <!-- Banner -->
         <!-- Video -->
         <video src="sourse/video/pranav3_1.mp4" type="video/mp4" class="w-100" muted controls poster="sourse/screenshot-video.jpg">
-            <source src="sourse/video/pranav3_1.mp4" type="video/mp4" class="w-100" muted controls poster="sourse/screenshot-video.jpg"/>
+            <source src="sourse/video/pranav3_1.mp4" type="video/mp4" class="w-100" muted controls poster="sourse/screenshot-video.jpg" />
             <source src="mivideo.webm" type="video/webm" />
             <p>Su navegador no soporta vídeos HTML5.</p>
         </video>
@@ -379,18 +379,14 @@
                     </div>
                     <div class="col-lg-4 form-right">
                         <h2 class="text-left title-secction">DESCARGAR BROCHURE</h2>
-                        </head>
-
-                        <body>
-                            <h1>Formulario de Validación</h1>
-                            <form class="" onsubmit="return validarFormulario();">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre" required><br><br>
-                                <label for="correo">Correo electrónico:</label>
-                                <input type="email" id="correo" name="correo" required><br><br>
-                                <button type="submit">Enviar</button>
-                            </form>
-                            <button id="descargarPDF" style="display: none;">Descargar PDF</button>
+                        <h1>Formulario de Validación</h1>
+                        <form action="enviar_correo.php" method="POST" onsubmit="return validarFormulario();">
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" required><br><br>
+                            <label for="correo">Correo electrónico:</label><br>
+                            <input type="email" id="correo" name="correo" required><br><br>
+                            <input type="submit" value="Descargar PDF">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -744,24 +740,46 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script>
+    // Mostrar mensaje de confirmación y descargar PDF después del envío exitoso
+    var formulario = document.querySelector('form');
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar envío del formulario
+        var formData = new FormData(formulario);
+        fetch(formulario.action, {
+                method: formulario.method,
+                body: formData
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    document.getElementById('mensaje').style.display = 'block';
+                    window.location.href = 'ruta_del_archivo.pdf';
+                } else {
+                    alert('Hubo un error al enviar el formulario. Por favor, intenta nuevamente.');
+                }
+            })
+            .catch(function(error) {
+                alert('Hubo un error al enviar el formulario. Por favor, intenta nuevamente.');
+            });
+    });
+    </script>
+    <script>
     function validarFormulario() {
-        var nombre = document.getElementById("nombre").value;
-        var correo = document.getElementById("correo").value;
+        var nombre = document.getElementById('nombre').value;
+        var correo = document.getElementById('correo').value;
 
-        // Validar nombre y correo electrónico
-        if (nombre === "" || correo === "") {
-            alert("Por favor, ingresa tu nombre y correo electrónico.");
+        // Validar que los campos estén completos
+        if (nombre === '' || correo === '') {
+            alert('Por favor, completa todos los campos.');
             return false;
         }
 
-        // Validar formato de correo electrónico usando una expresión regular
-        var correoRegex = /^\S+@\S+\.\S+$/;
-        if (!correoRegex.test(correo)) {
-            alert("Por favor, ingresa un correo electrónico válido.");
+        // Validar el formato del correo electrónico
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(correo)) {
+            alert('Por favor, ingresa un correo electrónico válido.');
             return false;
         }
 
-        // Si la validación es exitosa, enviar el formulario
         return true;
     }
     </script>
