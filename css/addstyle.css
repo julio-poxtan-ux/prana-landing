@@ -36,13 +36,20 @@
 
 .btn-prana {
     background-color: var(--prana-verde);
-    margin-left: 4vw;
+    /*    margin-left: 4vw;*/
+    color: white;
 }
 
 .btn-prana:hover {
     background-color: var(--prama-gris);
     color: white;
 }
+
+.btn-hero {
+    margin-left: 4vw;
+}
+
+
 
 .title-secction {
     font-size: 40px;
@@ -275,7 +282,7 @@ a.nav-link:active {
 }
 
 .color-v:hover {
-    background-color:rgb(171 250 135 / 70%);
+    background-color: rgb(171 250 135 / 70%);
 }
 
 .vista-contenedor-nivel-1 {
